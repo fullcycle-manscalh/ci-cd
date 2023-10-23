@@ -3,6 +3,7 @@ on:
   pull_request:
     branches:
       - develop
+      - main
 jobs:
   check-application:
     runs-on: ubuntu-latest
@@ -30,4 +31,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: manscalh/ci-cd:latest
+          tags: manscalh/ci-cd-v2:latest
